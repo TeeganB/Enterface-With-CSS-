@@ -1,0 +1,305 @@
+/* Global Styles */
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Raleway', sans-serif;
+}
+
+p, a, li, figcaption, label{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2em;
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+header {
+    background-color:  #000000;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.header-nav{
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: 140px;
+    background-color: #000000;
+    width: 100%;
+    z-index: 10;
+}
+
+.header-nav div{
+    width: auto;
+    height: 100%;
+    flex-grow: 0.5;
+}
+.header-nav img{
+    width: auto;
+    height: 75%;
+}
+
+.header-nav menu{
+    display: flex;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav menu li{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.header-nav menu li a:hover {
+    border-bottom: solid 2px #ff0000;
+}
+
+/* Main Content */
+main {
+    background-color: #ff0000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 200px;
+}
+
+/* Intro Section */
+.intro {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.intro img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Features Section */
+.features {
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.feature {
+    background: rgba(146, 145, 145, 0.75);
+    padding: 10px;
+    border-radius: 10px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+    transform: scale(1.05);
+    background: rgba(73, 73, 73, 0.75);
+}
+
+
+
+
+/* Masthead Section */
+.masthead {
+    position: relative;
+    background: url('../img/kitkatstore.jpg') no-repeat center center/cover;
+    height: 300px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px; 
+    z-index: 1; 
+}
+
+.masthead .mask {
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+/* Online Sections */
+.online-stores {
+    margin-top: 20px;
+    background: rgba(255, 255, 255, 1);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px;
+    width: 80%;
+}
+
+.online-stores h2 {
+    margin-bottom: 20px;
+}
+
+.online-stores ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+.online-stores li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: #D3D3D3; /* Light grey background */
+    padding: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.online-stores li:hover {
+    transform: scale(1.05); /* Scale up when hovered */
+    background: #A9A9A9; /* Darker grey on hover */
+}
+
+.online-stores img {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.online-stores a {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.online-stores a:hover {
+    color: #000000;
+}
+Expla
+
+/* Footer */
+footer {
+    background: #565656;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+small {
+    text-align: center;
+}
+
+.logo {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+input {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+}
+
+button {
+    background: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+button:hover {
+    background: #ff0000;
+}
+
+
+/* Nutrition Section */
+.nutrition ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nutrition li {
+    background-color: #4f4f4d;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease;
+}
+
+.nutrition li:hover {
+    transform: scale(1.05);
+    background-color: #fbc02d;
+}
+
+/* Fun Facts Section */
+.fun-facts {
+    background-color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.fun-facts ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 1.1em;
+    line-height: 1.6;
+}
+
+.fun-facts li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.fun-facts li:last-child {
+    border-bottom: none;
+}
+
+.fun-facts li::before {
+    content: "✔️";
+    margin-right: 10px;
+    color: #ff0000;
+}
